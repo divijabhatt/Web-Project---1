@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>North Pole Novelties</title>
+
+<script language="JavaScript">
+
+function XmasDays(CurrentDay) {
+   var XYear=CurrentDay.getFullYear();
+   document.write(XYear);
+   var XDay=new Date("July,4,2021");
+   XDay.setFullYear(XYear);
+   var DayCount=(CurrentDay-XDay)/(1000*60*60*24);
+   DayCount=Math.round(DayCount);
+return DayCount;
+}
+function MonthTxt (MonthNumber) {
+   var Month=new Array();
+   Month[1]="January";
+   Month[2]="February";
+   Month[3]="March";
+   Month[4]="April";
+   Month[5]="May";
+   Month[6]="June";
+   Month[7]="July";
+   Month[8]="August";
+   Month[9]="September";
+   Month[10]="October";
+   Month[11]="November";
+   Month[12]="December";
+return Month[MonthNumber];
+}
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+
+ <script>
+
+
+
+
+var date1 = new Date('07/04/2022');
+//document.write(date1);
+var date2 = new Date();
+//document.write(date2);
+
+
+var difference = date1.getTime() - date2.getTime();
+//document.write(difference);
+
+
+var days = Math.ceil(difference / (1000 * 3600 * 24));
+document.write("These are " + days + ' days to Independence day in 2022');
+
+
+
+ </script>
+ <p>Next page
+ <a href="USToCanadian.html">Convert US dollars to Canadian</a><br>
+</p><br>
+ <a href="MyselfHomepage.html">Back to Home page</a>
+</body>
+<style>
+
+   body {
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnXAyn15TDk8mQ8pZMqV7CZElq8IVlDgvtg&usqp=CAU');
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: auto;
+    }
+</style>
+</html>

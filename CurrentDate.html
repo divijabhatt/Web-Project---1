@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Date</title>
+</head>
+<body>
+  <script>
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = mm + '/' + dd + '/' + yyyy;
+    document.write("Current date: " + today);
+  </script>
+<style>
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnXAyn15TDk8mQ8pZMqV7CZElq8IVlDgvtg&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+</style>
+<p>Next page
+<a href="Date1.html">Days to independence day</a><br>
+</p><br>
+<a href="MyselfHomepage.html">Back to Home page</a>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Links to Government Web pages</title>
+
+</head>
+
+<script>
+<!---Hide from older browsers
+function jump_to_link(weblist) {
+var url_number=weblist.selectedIndex;
+location=weblist.options[url_number].value;
+}
+//Stop hiding --->
+</script>
+
+</head>
+<body>
+
+<h2 >Favorite Sites on the Web</h2>
+<p>These are my favorite websites:</p>
+
+
+<form name="glinks">
+<table cellpadding="5">
+<tr>
+<td>Favorite websites</td>
+<td>
+   <select name="leg" onchange="jump_to_link(this);">
+   <option value="javascript:location.reload()">Select a Web page on the favorites
+   <option value="http://www.instructure.com/">Instructure: Instructure Portal
+   <option value="http://www.google.com/">Google: Search Engine
+   <option value="http://www.amazon.com/">AMAZON: Commerce website
+   <option value="http://www.youtube.com/">Youtube Site
+   <option value="http://www.gmail.com">Gmail for my emails
+   
+   </select>
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

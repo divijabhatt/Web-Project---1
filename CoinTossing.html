@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coin tossing</title>
+    <script>
+
+    </script>
+</head>
+<body>
+    <button id="click" type="button">CLICK ME</button>
+    <p>
+        You got: <span id="result"></span>
+    </p>
+<script>
+    document.getElementById('click').onclick = click;
+
+        var heads = 0;
+        var tails = 0;
+        function click() {
+            x = (Math.floor(Math.random() * 2) == 0);
+            if(x){
+                flip("heads");
+            }else{
+                flip("tails");
+            }
+        };
+        function flip(coin) {
+            document.getElementById("result").innerHTML = coin;
+        };
+
+</script>
+<style>
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhnXAyn15TDk8mQ8pZMqV7CZElq8IVlDgvtg&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+</style>
+<p>Next page
+<a href="CurrentDate.html">Current Date display</a><br>
+</p><br>
+<a href="MyselfHomepage.html">Back to Home page</a>
+</body>
+</html>
